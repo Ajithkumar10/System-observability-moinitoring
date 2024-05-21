@@ -93,6 +93,9 @@ Here are two examples of successful responses for `/init` and `authorize/user` e
 ``` 
 From this point forward, you will not need to **Initialize the Database** or **Register a User**.
 
+![image](https://github.com/Ajithkumar10/System-observability-moinitoring/assets/8057634/b65b33af-e4d5-4198-a44e-4706489b3d67)
+
+
 ## Project Instructions
 1. Prior to executing commands in EKS, you may need to update the `kube config file` by running:
 ```
