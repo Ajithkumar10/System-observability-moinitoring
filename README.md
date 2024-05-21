@@ -113,7 +113,7 @@ helm repo add prometheus-community https://prometheus-community.github.io/helm-c
 helm repo update
 ```
 7. Install the monitoring stack in Kubernetes using helm. You will need to include `-f "path\to\values.yaml" --namespace monitoring`.
-8. Then login to Grafana using the credentials`user: admin & password: prom-operator`.
+8. Then login to Grafana using the credentials`user: admin & password: prom-operator`. kubectl port-forward service/prometheus-grafana 3000:80
 9. Create dashboards for the CPU for the EC2 instance using `instance:node_cpu:rate:sum` query.
 10. Call the dashboard ***CPU %***.
 11. Make a dashboard for Available Memory in bytes. Use `node_memory_MemAvailable_bytes` in the prometheus query.
@@ -141,5 +141,10 @@ helm repo update
     * Showing if the the flask endpoint is offline.
 3. Cause the host metrics alerts to trigger.
 4. Cause the flask endpoint to go offline.
+
+### OUTPUT
+![image](https://github.com/Ajithkumar10/System-observability-moinitoring/assets/8057634/4a1f22ac-9be7-4c05-807a-b2ddd7169d1c)
+
+
 
 
