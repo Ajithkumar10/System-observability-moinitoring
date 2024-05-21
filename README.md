@@ -142,28 +142,4 @@ helm repo update
 3. Cause the host metrics alerts to trigger.
 4. Cause the flask endpoint to go offline.
 
-## Submissions
-1. A zip file containing screenshots from Grafana which include:
-    * The dashboard for EC2 CPU utilization.
-    * The dashboard for EC2 Memory utilization.
-    * The dashboard for EC2 Disk I/O.
-    * The dashboard for EC2 Network utilization.
-    * The imported dashboard for Blackbox Exporter.
-    * The dashboard showing that an alert triggered (could be one of CPU/memory/disk/network utilization).
-    * The message from the alert--this can be in slack, email or other.
-    * The alert showing that the flask app is offline.
-    * The alert showing that the flask app is back online.
-    * The list of alerting rules.
-2. The screenshot of the node_exporter service running on the EC2 instance `sudo systemctl status node_exporter`
 
-## Built With
-### Software
-* [Python](https://www.python.org/downloads/) - Programming Language
-* [VS Code](https://code.visualstudio.com/) - Integrated Development Environment
-
-### Open-source 3rd-party
-[Example_Flask_API](https://github.com/orme292/example_flask_api)
-[Prometheus Stack](https://github.com/prometheus-community/helm-charts/blob/main/charts)
-
-## License
-[License](../LICENSE.md)
